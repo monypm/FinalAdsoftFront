@@ -5,6 +5,9 @@ import { AppComponent } from './app.component';
 import { LoginPageComponent } from './login-page/login-page.component';
 import { LoginComponent } from './login/login.component';
 
+import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
+import {MaterialModuleModule} from './material-module/material-module.module';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -12,7 +15,9 @@ import { LoginComponent } from './login/login.component';
     LoginComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    BrowserAnimationsModule,
+    MaterialModuleModule
   ],
   providers: [],
   bootstrap: [AppComponent]
