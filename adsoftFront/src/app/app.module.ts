@@ -11,14 +11,12 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MaterialModuleModule } from './material-module/material-module.module';
 import { AppRoutingModule } from './app-routing/app-routing.module';
 import { HttpClientModule } from '@angular/common/http';
-
 import { MatSnackBarModule } from '@angular/material/snack-bar';
 import { ErrorHandlerService } from './services/error-handler.service';
 import { AuthService } from './services/auth.service';
-import { RegistrationPageComponent } from './registration-page/registration-page.component';
-import { CrudService } from './services/crud.service';
-import { UpdateUserComponent } from './update-user/update-user.component';
 
+import { RegistrationPageComponent } from './registration-page/registration-page.component';
+import { UpdateUserComponent } from './update-user/update-user.component';
 import { ProfilePageComponent } from './profile-page/profile-page.component';
 import { RetrieveProfileComponent } from './retrieve-profile/retrieve-profile.component';
 import { DataService } from './services/data.service';

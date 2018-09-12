@@ -2,33 +2,32 @@
   <div class="container">
     <mat-card-title>Crea tu cuenta</mat-card-title>
     <mat-card-subtitle>Ingresa tus datos.</mat-card-subtitle>
+    
+    <div class="row">
+      <mat-form-field class="input-width">
+        <input matInput placeholder="Nombre" [(ngModel)]="user.first_name">
+      </mat-form-field>
+    </div>
 
-    <mat-form-field class="input-width">
-      <input matInput placeholder="Correo electrónico" type="email" [(ngModel)]="user.id">
-    </mat-form-field>
+    <div class="row">
+      <mat-form-field class="input-width">
+        <input matInput placeholder="Apellidos" [(ngModel)]="user.last_name">
+      </mat-form-field>
+    </div>
 
-    <mat-form-field class="input-width">
-      <input matInput placeholder="Nombre" [(ngModel)]="user.first_name">
-    </mat-form-field>
-
-    <mat-form-field class="input-width">
-      <input matInput placeholder="Apellidos" [(ngModel)]="user.last_name">
-    </mat-form-field>
-
-    <mat-form-field class="input-width">
-        <input matInput placeholder="Teléfono" [(ngModel)]="user.phone_number">
-    </mat-form-field>
-
-    <mat-form-field class="input-width">
-        <mat-select placeholder="Género" [(value)]="user.gender">
+    <div class="row">
+      <mat-form-field class="input-width">
+        <mat-select placeholder="Género" [(ngModel)]="user.gender">
           <mat-option value="1"> Hombre </mat-option>
           <mat-option value="2"> Mujer </mat-option>
           <mat-option value="3"> Otro </mat-option>
         </mat-select>
       </mat-form-field>
-  
+    </div>
+
+    <div class="row">
       <mat-form-field class="input-width">
-        <mat-select placeholder="Edad" [(value)]="user.age">
+        <mat-select placeholder="Edad" [(ngModel)]="user.age">
           <mat-option value="15"> 15 </mat-option>
           <mat-option value="16"> 16 </mat-option>
           <mat-option value="17"> 17 </mat-option>
@@ -37,9 +36,13 @@
           <mat-option value="20"> 20 </mat-option>
         </mat-select>
       </mat-form-field>
+    </div>
 
-    <mat-card-actions>
-      <button mat-raised-button color="primary" (click)='createUser()'>Crear cuenta</button>
-    </mat-card-actions>
+    <div class="row">
+      <mat-card-actions>
+        <button mat-raised-button color="primary" (click)='updateUser()'>Actualizar cuenta</button>
+      </mat-card-actions>
+    </div>
+
   </div>
 </mat-card>

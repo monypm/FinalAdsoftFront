@@ -17,7 +17,7 @@ const routes: Routes = [
   { path:'login', component: LoginComponent},
   { path: 'home', component: LandingPageComponent},
   { path: 'register', component: RegistrationPageComponent},
-  { path: 'users/update/:id', component: UpdateUserComponent},
+  { path: 'users/update', component: UpdateUserComponent},
 
   // Perfil
   { path: 'profile', component: RetrieveProfileComponent},
