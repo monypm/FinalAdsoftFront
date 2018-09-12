@@ -5,9 +5,9 @@ import { Routes, RouterModule, CanActivate } from '@angular/router';
 
 //Import components
 import { LoginComponent } from '../login/login.component';
-import { LoginPageComponent } from '../login-page/login-page.component';
 import { LandingPageComponent } from '../landing-page/landing-page.component';
 import { RegistrationPageComponent } from '../registration-page/registration-page.component';
+import { UpdateUserComponent } from '../update-user/update-user.component';
 
 
 
@@ -17,6 +17,7 @@ const routes: Routes = [
   { path:'login', component: LoginComponent},
   { path: 'home', component: LandingPageComponent},
   { path: 'register', component: RegistrationPageComponent},
+  { path: 'users/update/:id', component: UpdateUserComponent},
 
   // Perfil
   //{ path: 'profile', component: UserPageComponent},

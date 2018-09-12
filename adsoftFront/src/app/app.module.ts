@@ -17,6 +17,7 @@ import { ErrorHandlerService } from './services/error-handler.service';
 import { AuthService } from './services/auth.service';
 import { RegistrationPageComponent } from './registration-page/registration-page.component';
 import { CrudService } from './services/crud.service';
+import { UpdateUserComponent } from './update-user/update-user.component';
 
 
 @NgModule({
@@ -25,7 +26,8 @@ import { CrudService } from './services/crud.service';
     LoginPageComponent,
     LoginComponent,
     LandingPageComponent,
-    RegistrationPageComponent
+    RegistrationPageComponent,
+    UpdateUserComponent
   ],
   imports: [
     BrowserModule,
