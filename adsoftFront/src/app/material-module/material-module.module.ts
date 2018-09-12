@@ -4,7 +4,11 @@ import { CommonModule } from '@angular/common';
 import {MatButtonModule, MatCheckboxModule} from '@angular/material';
 import {MatCardModule} from '@angular/material/card';
 import {MatInputModule} from '@angular/material/input';
+import {MatDividerModule} from '@angular/material/divider';
+import {MatFormFieldModule} from '@angular/material/form-field';
 import {MatSelectModule} from '@angular/material/select';
+import {MatDatepickerModule} from '@angular/material/datepicker';
+import {MatNativeDateModule} from '@angular/material';
 
 @NgModule({
   imports: [
@@ -13,14 +17,22 @@ import {MatSelectModule} from '@angular/material/select';
     MatCheckboxModule,
     MatCardModule,
     MatInputModule,
-    MatSelectModule
+    MatDividerModule,
+    MatFormFieldModule,
+    MatSelectModule,
+    MatDatepickerModule,
+    MatNativeDateModule
   ],
   exports: [
     MatButtonModule,
     MatCheckboxModule,
     MatCardModule,
     MatInputModule,
-    MatSelectModule
+    MatDividerModule,
+    MatFormFieldModule,
+    MatSelectModule,
+    MatDatepickerModule,
+    MatNativeDateModule
   ],
   declarations: []
 })
