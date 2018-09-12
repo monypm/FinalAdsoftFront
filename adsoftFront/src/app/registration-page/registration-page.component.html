@@ -1,0 +1,25 @@
+
+<mat-card class="z-depth center" flex="50">
+    <mat-card-title>Crea tu cuenta</mat-card-title>
+    <mat-card-subtitle>Ingresa tus datos.</mat-card-subtitle>
+
+    <mat-form-field class="input-width">
+        <input matInput placeholder="Correo electrónico" type="email" [(ngModel)]="user.id">
+    </mat-form-field>
+    <mat-form-field class="input-width">
+        <input matInput placeholder="Nombre" [(ngModel)]="user.first_name">
+    </mat-form-field>
+    <mat-form-field class="input-width">
+        <input matInput placeholder="Apellidos" [(ngModel)]="user.last_name">
+    </mat-form-field>
+    <mat-form-field class="input-width">
+        <input matInput placeholder="Contraseña" type="password" [(ngModel)]="user.password">
+    </mat-form-field>
+    <mat-form-field class="input-width">
+        <input matInput placeholder="Confirmar contraseña" type="password" [(ngModel)]="passwordConfirmation">
+    </mat-form-field>
+    <mat-card-actions>
+            <button mat-raised-button color="primary" (click)='createUser()'>Crear cuenta</button>
+    </mat-card-actions>
+</mat-card>
+    
