@@ -5,6 +5,7 @@ import { AppComponent } from './app.component';
 import { LoginPageComponent } from './login-page/login-page.component';
 import { LoginComponent } from './login/login.component';
 import { LandingPageComponent } from './landing-page/landing-page.component';
+import { FormsModule } from '@angular/forms';
 
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MaterialModuleModule } from './material-module/material-module.module';
@@ -14,6 +15,7 @@ import { HttpClientModule } from '@angular/common/http';
 import { MatSnackBarModule } from '@angular/material/snack-bar';
 import { ErrorHandlerService } from './services/error-handler.service';
 import { AuthService } from './services/auth.service';
+import { RegistrationPageComponent } from './registration-page/registration-page.component';
 
 
 @NgModule({
@@ -21,7 +23,8 @@ import { AuthService } from './services/auth.service';
     AppComponent,
     LoginPageComponent,
     LoginComponent,
-    LandingPageComponent
+    LandingPageComponent,
+    RegistrationPageComponent
   ],
   imports: [
     BrowserModule,
@@ -29,7 +32,8 @@ import { AuthService } from './services/auth.service';
     MaterialModuleModule,
     MatSnackBarModule,
     HttpClientModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule
   ],
   providers: [
     ErrorHandlerService,
