@@ -16,6 +16,7 @@ import { MatSnackBarModule } from '@angular/material/snack-bar';
 import { ErrorHandlerService } from './services/error-handler.service';
 import { AuthService } from './services/auth.service';
 import { RegistrationPageComponent } from './registration-page/registration-page.component';
+import { CrudService } from './services/crud.service';
 
 
 @NgModule({
@@ -37,7 +38,8 @@ import { RegistrationPageComponent } from './registration-page/registration-page
   ],
   providers: [
     ErrorHandlerService,
-    AuthService
+    AuthService,
+    CrudService
   ],
   bootstrap: [AppComponent]
 })
