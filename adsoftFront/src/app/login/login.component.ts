@@ -15,7 +15,6 @@ export class LoginComponent implements OnInit {
   constructor(private errorHandler:ErrorHandlerService, private auth:AuthService, private router:Router) { }
 
   ngOnInit() {
-    console.log("on init");
     if(this.auth.isLoggedIn()){
       this.router.navigate(['profile'])
     }
@@ -25,13 +24,12 @@ export class LoginComponent implements OnInit {
   }
 
   login(){
-    console.log("login");
     if(this.validate()){
       this.auth.login(this.id, this.password)
       .subscribe(
         res => {
           this.auth.setSession(res);
-          this.router.navigate(['home']);
+          this.router.navigate(['profile']);
         },
         err => {
           this.errorHandler.handleError(err);

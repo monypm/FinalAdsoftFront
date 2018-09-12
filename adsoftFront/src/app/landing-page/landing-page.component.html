@@ -12,6 +12,10 @@
         <div *ngIf="show" class="col-md-6 mt-3">
             <button mat-raised-button color="primary"  routerLink="/login">Iniciar sesión</button>
         </div>
+        
+        <div *ngIf="!show" class="col-md-6 mt-3">
+            <button mat-raised-button color="primary"  routerLink="/profile">Ver perfil</button>
+        </div>
 
         <div *ngIf="!show" class="col-md-6 mt-3">
           <button mat-raised-button color="warn"  (click)="logout()">Cerrar sesión</button>
