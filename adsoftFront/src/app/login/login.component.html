@@ -4,13 +4,13 @@
     <mat-card-subtitle>Ingresa tus datos para iniciar sesión.</mat-card-subtitle>
     <mat-card-content>
       <mat-form-field class="input-width">
-        <input matInput placeholder="Correo electrónico">
+        <input matInput placeholder="Correo electrónico" [(ngModel)]="id">
       </mat-form-field>
       <mat-form-field class="input-width">
-        <input matInput type="password" placeholder="Contraseña">
+        <input matInput type="password" placeholder="Contraseña" [(ngModel)]="password">
       </mat-form-field>
       <div class="row">
-        <button mat-raised-button color="primary">Iniciar sesión</button>
+        <button mat-raised-button color="primary" (click)="login()">Iniciar sesión</button>
       </div>
     </mat-card-content>
   </mat-card>

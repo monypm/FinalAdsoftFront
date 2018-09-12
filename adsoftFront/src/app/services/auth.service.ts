@@ -10,7 +10,7 @@ export class AuthService {
 
 
   constructor(private http:HttpClient) {
-    this.URL = 'http://localhost:8000/api';
+    this.URL = 'http://35.231.76.105:8080/api';
     this.headers = new HttpHeaders({
       'Content-Type': 'application/json'
     });
@@ -20,7 +20,7 @@ export class AuthService {
   login(id:string, password:string) {
     let user;
     let body = {
-      user_id: id,
+      id: id,
       password: password
     }
 

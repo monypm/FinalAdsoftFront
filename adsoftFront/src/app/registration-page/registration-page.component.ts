@@ -18,7 +18,7 @@ export class RegistrationPageComponent implements OnInit {
 
   ngOnInit() {
     this.selected = '';
-    this.user = new User('', '', null, 0, '', null, null, null, null, null, null);
+    this.user = new User('', '', '', null, 0, '', null, null);
 
   }
 
