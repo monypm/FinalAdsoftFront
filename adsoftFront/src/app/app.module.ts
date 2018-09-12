@@ -19,10 +19,16 @@ import { RegistrationPageComponent } from './registration-page/registration-page
 import { CrudService } from './services/crud.service';
 import { UpdateUserComponent } from './update-user/update-user.component';
 
+import { ProfilePageComponent } from './profile-page/profile-page.component';
+import { RetrieveProfileComponent } from './retrieve-profile/retrieve-profile.component';
+import { DataService } from './services/data.service';
+import { CrudService } from './services/crud.service';
 
 @NgModule({
   declarations: [
     AppComponent,
+    ProfilePageComponent,
+    RetrieveProfileComponent,
     LoginPageComponent,
     LoginComponent,
     LandingPageComponent,
@@ -33,6 +39,7 @@ import { UpdateUserComponent } from './update-user/update-user.component';
     BrowserModule,
     BrowserAnimationsModule,
     MaterialModuleModule,
+    FormsModule,
     MatSnackBarModule,
     HttpClientModule,
     AppRoutingModule,
@@ -41,6 +48,7 @@ import { UpdateUserComponent } from './update-user/update-user.component';
   providers: [
     ErrorHandlerService,
     AuthService,
+    DataService,
     CrudService
   ],
   bootstrap: [AppComponent]

@@ -8,7 +8,7 @@ import { LoginComponent } from '../login/login.component';
 import { LandingPageComponent } from '../landing-page/landing-page.component';
 import { RegistrationPageComponent } from '../registration-page/registration-page.component';
 import { UpdateUserComponent } from '../update-user/update-user.component';
-
+import { RetrieveProfileComponent } from '../retrieve-profile/retrieve-profile.component';
 
 
 
@@ -20,7 +20,7 @@ const routes: Routes = [
   { path: 'users/update/:id', component: UpdateUserComponent},
 
   // Perfil
-  //{ path: 'profile', component: UserPageComponent},
+  { path: 'profile', component: RetrieveProfileComponent},
 
   { path: '**', redirectTo: '' }
 ];

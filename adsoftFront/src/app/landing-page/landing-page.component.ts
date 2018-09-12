@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { AuthService } from '../services/auth.service';
 import { ErrorHandlerService } from '../services/error-handler.service';
 import { Router, ActivatedRoute } from '@angular/router';
 
@@ -9,9 +10,17 @@ import { Router, ActivatedRoute } from '@angular/router';
 })
 export class LandingPageComponent implements OnInit {
 
-  constructor(private errorHandler:ErrorHandlerService, private router:Router, private route:ActivatedRoute) { }
+  show: boolean; 
+
+  constructor(private auth:AuthService, private errorHandler:ErrorHandlerService, private router:Router, private route:ActivatedRoute) { }
 
   ngOnInit() {
+    this.show = !this.auth.isLoggedIn();
+  }
+
+  logout(){
+    this.auth.logout();
+    this.show = !this.auth.isLoggedIn();
   }
 
 }
