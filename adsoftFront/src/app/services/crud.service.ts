@@ -1,6 +1,7 @@
 import { Injectable } from '@angular/core';
 import { AuthService } from './auth.service';
 import { HttpClient, HttpHeaders } from '@angular/common/http';
+import { AuthService } from './auth.service';
 
 @Injectable()
 export class CrudService {
@@ -40,27 +41,12 @@ export class CrudService {
     );
   }
 
-  registerUser(body:any) {
+  create(model: string, body: any) {
     return this.http.post(
-      this.URL + "/" + this.models.USER,
+      this.URL + "/" + model,
       body,
       { headers: this.headers }
-    );
-  }
-
-  confirmUser(uuid:String){
-    return this.http.get(
-      this.URL + "/users/confirm/" + uuid
-    );
-  }
-
-  create(model: string, body: any) {
-
-        return this.http.post(
-          this.URL + "/" + model,
-          body,
-          { headers: this.headers }
-        )
+    )
   }
 
   update(model: string, id: any, body: any) {
@@ -75,6 +61,20 @@ export class CrudService {
     return this.http.delete(
       this.URL + "/" + model + "/" + id,
       { headers: this.headers }
+    );
+  }
+
+  registerUser(body:any) {
+    return this.http.post(
+      this.URL + "/" + this.models.USER,
+      body,
+      { headers: this.headers }
+    );
+  }
+
+  confirmUser(uuid:String){
+    return this.http.get(
+      this.URL + "/users/confirm/" + uuid
     );
   }
 }
