@@ -3,15 +3,15 @@
     margin: 10px auto;
   }
   
-  .main-div{
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
+.main-div{
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
-  .input-width {
-    width: 51%;
-    justify-content: center;
-    align-items: center;
-  }
+.input-width {
+  width: 51%;
+  justify-content: center;
+  align-items: center;
+}
