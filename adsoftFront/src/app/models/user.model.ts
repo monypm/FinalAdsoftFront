@@ -1,6 +1,7 @@
 export class User {
     constructor(
-
+        
+        public id: string, 
         public first_name: string,
         public last_name: string,
         
@@ -15,6 +16,5 @@ export class User {
         public phone_number?: string,
         public organizer_alias?: string,
         public profile_pic?: string,
-        public id?: string, 
     ) { }
 }
