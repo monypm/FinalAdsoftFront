@@ -7,6 +7,7 @@ import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 import {MaterialModuleModule} from './material-module/material-module.module';
 import { ProfilePageComponent } from './profile-page/profile-page.component';
 import { RetrieveProfileComponent } from './retrieve-profile/retrieve-profile.component';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -17,7 +18,8 @@ import { RetrieveProfileComponent } from './retrieve-profile/retrieve-profile.co
   imports: [
     BrowserModule,
     BrowserAnimationsModule,
-    MaterialModuleModule
+    MaterialModuleModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

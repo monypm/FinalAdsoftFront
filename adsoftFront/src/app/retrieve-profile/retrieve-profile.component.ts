@@ -9,7 +9,10 @@ export class RetrieveProfileComponent implements OnInit {
 
   constructor() { }
 
+  date;
+
   ngOnInit() {
+    this.date = new Date('1996-05-25T03:24:00');
   }
 
 }
